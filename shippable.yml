@@ -3,6 +3,14 @@ build_image: 'drydock/u14pyt:prod'
 build:
   ci:
     - echo "Hello, World!"
+
+env:
+  global:
+    - FOO=FUBU
+
+  matrix:
+    - M1=ONE
+    - M2=TWO
     
 integrations:
   notifications:
