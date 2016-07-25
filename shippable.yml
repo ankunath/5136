@@ -22,7 +22,6 @@ integrations:
     - integrationName: slack-test
       type: slack
       recipients: 
-        - "#harryi3t"
         - "#testIssues"
         
       on_start: always
