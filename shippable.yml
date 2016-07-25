@@ -3,7 +3,7 @@ build_image: 'drydock/u14pyt:prod'
 build:
   ci:
     - echo "Hello, World!"
-    - if (M2 === TWO) sleep 10
+    - if [ "$M2" == 'TWO' ]; then sleep 10s
 
 env:
   global:
